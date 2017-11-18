@@ -1,0 +1,62 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,600");
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// Variable
+
+// Bootstrap
+@import "node_modules/bulma/css/bulma";
+.hero.is-primary.is-bold {
+  background-image: linear-gradient(141deg, #4e607c 0, #445775 71%, #445775 100%);
+}
+
+.navbar-brand {
+  margin-left: 50px
+}
+.navbar{
+  border-bottom: 2px solid;
+  border-bottom-color: #475a77;
+}
+.titleinprofile {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2.125;
+}
+.media-left .image img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.prof {
+  margin-right: 15px;
+}
+.logi-page{
+  margin-top: 57px;
+  margin-bottom: 200px;
+}
+//.header-image {
+//  background-image: url("http://orig14.deviantart.net/7584/f/2015/181/2/7/flat_mountains_landscape_by_ggiuliafilippini-d8zdbco.jpg");
+//  background-position: center center;
+//  background-repeat: no-repeat;
+//  background-attachment: fixed;
+//  background-size: cover;
+//  background-color: #999;
+//}
+.signHidden{
+  display: none;
+}
+.star-pad{
+  margin-left: 24px;
+}
+.card-image .image {
+  background-size: cover;
+  background-position: center;
+  margin-left: 68px;
+  padding-top: 18px;
+}
+.marginBott{
+  margin-bottom: 12px;
+}
