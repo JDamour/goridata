@@ -71,7 +71,6 @@ class HomeController extends Controller
         $fileapi='';
         $urlapi='';
         if ($request->hasFile('dataset_type')) {
-            dd(mime_content_type($_FILES['dataset_type']['tmp_name']));
             $this->validate($request, [
                 // check validtion for image or file dd(Input::all());
 //                'dataset_type' => 'required|file|mimes:application/json'
