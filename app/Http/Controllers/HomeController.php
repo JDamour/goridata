@@ -72,9 +72,9 @@ class HomeController extends Controller
         $urlapi='';
         if ($request->hasFile('dataset_type')) {
             $this->validate($request, [
-                // check validtion for image or file dd(Input::all());
-//                'dataset_type' => 'required|file|mimes:application/json'
-                'dataset_type' => 'required|mimes:json,txt'
+
+                'dataset_type' => 'required|file|mimes:application/json'
+//                'dataset_type' => 'required|mimes:json,txt'
             ]);
             $getimageName = time().'.'.$request->dataset_type->getClientOriginalExtension();
              $request->dataset_type->move(public_path('files/datasets'), $getimageName);
