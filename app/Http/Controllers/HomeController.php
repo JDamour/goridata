@@ -7,8 +7,7 @@ use App\Star;
 use App\Tag;
 use App\Topic;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Route;
+use Validator;
 use JavaScript;
 use Session;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -72,9 +71,7 @@ class HomeController extends Controller
         $urlapi='';
         if ($request->hasFile('dataset_type')) {
             $this->validate($request, [
-
-                'dataset_type' => 'required|file|mimes:application/json'
-//                'dataset_type' => 'required|mimes:json,txt'
+                'dataset_type' => 'required|json_file'
             ]);
             $getimageName = time().'.'.$request->dataset_type->getClientOriginalExtension();
              $request->dataset_type->move(public_path('files/datasets'), $getimageName);

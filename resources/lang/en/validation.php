@@ -102,6 +102,10 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
+            'json_file' => 'The :attribute must be a Json file.',
+        ],
+    'dataset_type' => [
+            'json_file' => 'The :attribute must be a Json file.',
         ],
     ],
 
